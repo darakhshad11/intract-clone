@@ -1,0 +1,98 @@
+.slider-component {
+  width: 78%;
+  margin-bottom: 50px;
+
+ 
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 50px;
+  color: white;
+  
+}
+
+.slide-content {
+  display: flex;
+ 
+}
+
+.slide-image {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.slide-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cards-slider {
+  margin-top: 50px;
+}
+
+.card {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  margin: 10px;
+}
+
+.slide-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #6435e9;
+  color: white;
+  border: none;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.slide-button:hover {
+  background-color: #0056b3;
+}
+
+
+.slide-button:hover {
+  background-color: #0056b3;
+}
+
+.cards-slider {
+  margin-top: 50px;
+}
+
+.card {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  text-align: center;
+}
