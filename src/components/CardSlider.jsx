@@ -67,7 +67,7 @@ const CardSlider = () => {
 
   return (
     <div className="card-slider">
-      <hr style={{ width: "90%" }} />
+     
       <h3 className='h3'>Airdrop Opportunities</h3>
       <Slider {...cardSettings}>
         <div className="card-wrapper">

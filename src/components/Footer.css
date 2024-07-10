@@ -4,16 +4,18 @@
 body {
     margin: 0;
     font-family: 'Outfit', sans-serif;
+    background: black;
 }
 
 .intract-guide {
     padding: 2em;
-    color: #333;
-    background: #f5f5f5;
+    color: white;
+    background: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 50px;
 }
 
 .intro {
@@ -47,7 +49,7 @@ body {
 
 .column ul li a {
     text-decoration: none;
-    color: #007BFF;
+    color: white;
 }
 
 .column ul li a:hover {
@@ -56,7 +58,7 @@ body {
 
 .disclaimer {
     padding: 2em;
-    background-color: #eee;
+    /* background-color: black; */
     text-align: center;
     color: #666;
     font-size: 0.875em;

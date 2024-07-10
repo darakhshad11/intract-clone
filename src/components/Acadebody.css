@@ -1,0 +1,95 @@
+.card-container {
+    display: flex;
+    gap: 20px; /* Adjust the gap between the cards */
+    justify-content: center; 
+    background-color: black;
+    padding: 10px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    width: 400px; /* Adjust as needed */
+    max-height: 600px; /* Adjust as needed */
+    overflow: hidden; /* Ensure overflow is hidden */
+    position: relative; /* Ensure position is relative for inner scrolling */
+    z-index: 1;
+    background-color: black;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.image-container img {
+    width: 150px; /* Adjust as needed */
+    height: 150px;
+    border-radius: 10px;
+}
+
+.header-content h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.header-content div {
+    font-size: 14px;
+    color: #666;
+}
+
+.card-content {
+    max-height: 200px; /* Set the height for scrollable content */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Adjust padding for scroll bar visibility */
+}
+
+.paragraph {
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+}
+.card-2{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    width: 200px; /* Adjust as needed */
+    max-height: 200px; /* Adjust as needed */
+    overflow: hidden; /* Ensure overflow is hidden */
+    position: relative; /* Ensure position is relative for inner scrolling */
+    z-index: 1;
+    background-color: black;
+    margin-top: 300px;
+    margin-left: 300px;
+}
+.card-3{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    width: 400px; /* Adjust as needed */
+    max-height: 600px; /* Adjust as needed */
+    overflow: hidden; /* Ensure overflow is hidden */
+    position: relative; /* Ensure position is relative for inner scrolling */
+    z-index: 1;
+    background-color: black;
+    margin-top: 100px;
+    margin-left: 100px;
+}

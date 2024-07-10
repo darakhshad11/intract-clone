@@ -9,20 +9,7 @@ import Card from './Card.jsx';
 const Explore = () => {
   return (
     <>
-    {/* <div className='explore'>Explore</div>
-      <div className="explore-container">
-        <div className="search-bar">
-          <input type="text" placeholder="Search..." aria-label="Search" style={{ backgroundImage: `url(${searchIcon})` }} />
-          
-        </div>
-        <div className="category-buttons">
-          <button>Quests (695)</button>
-          <button>NFTs (116)</button>
-          <button>Communities (671)</button>
-          <button>Events (31)</button>
-          <button>External Quests (12855)</button>
-        </div>
-      </div> */}
+    
   <div className="App">
       <div className="explore">
         <h1 className="title">Explore</h1>

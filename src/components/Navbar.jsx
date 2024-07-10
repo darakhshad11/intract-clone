@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import logo from '../logo/intract_text.svg';
-
+import Popup from './Popup';
+import searchIcon from '../logo/search.png';
 import Popupfor from './Popupfor';
 
 const Navbar = () => {
@@ -12,7 +13,9 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-brand">
-                <img src={logo} alt="intract logo" />
+                <Link to="/">
+                    <img src={logo} alt="intract logo" />
+                </Link>
             </div>
             <ul className="navbar-nav">
                 <li 
@@ -21,12 +24,15 @@ const Navbar = () => {
                     onMouseLeave={() => setIsCompassHovered(false)}
                 >
                     <Link to="/compass">Compass</Link>
-                    {/* <Popup isOpen={isCompassHovered} content="Compass popup content" /> */}
+                    <Popup isOpen={isCompassHovered} content="Compass popup content" />
                 </li>
                 
                 <li className="nav-item"><Link to="/explore">Explore</Link></li>
-                <li className="nav-item"><Link to="/academy">Academy</Link></li>
-                <li className="nav-item"><Link to="/nfts">NFTs</Link></li>
+                <li className="nav-item">
+                    <Link to="/academy">Academy<button className='new'>new</button></Link>
+                </li>
+                
+                <li className="nav-item"><Link to="/nafty">NFTs</Link></li>
                 <li 
                     className="nav-item"
                     onMouseEnter={() => setIsForProjectsHovered(true)}
@@ -39,15 +45,16 @@ const Navbar = () => {
                             <div>
                                 <h3>Launch your quest today!</h3>
                                 <p>⚠️❗ Please note this is for projects only, not individual users ❗⚠️</p>
-                                <button  className='button'>Launch Your Quest</button>
+                                <button className='button'>Launch Your Quest</button>
                             </div>
                         } 
                     />
                 </li>
             </ul>
             <div className="search-container">
-                <input type="text" placeholder="Search..." />
-                <button type="submit">Sign in</button>
+                <img src={searchIcon} alt="search" className="search-icon" />
+                <input type="text" placeholder="Search for ecosystems, trending quests etc," />
+                <button type="submit"><b>Sign in</b></button>
             </div>
         </nav>
     );

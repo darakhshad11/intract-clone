@@ -5,6 +5,10 @@ import Explore from './components/Explore';
 
 import Home from './components/Home'; 
 import Academy from './components/Academy';
+import Nafty from './components/Nafty';
+
+
+
 
 
 const App = () => {
@@ -15,6 +19,8 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/explore" element={<Explore />} />
                 <Route path="/academy" element={<Academy />} />
+                <Route path="/nafty" element={<Nafty />} />
+              
             </Routes>
           
         </Router>

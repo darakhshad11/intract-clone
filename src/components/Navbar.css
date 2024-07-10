@@ -1,14 +1,18 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* Change from space-between to flex-start */
     align-items: center;
     padding: 10px 20px;
     background-color: #333;
     color: white;
 }
 
+.navbar-brand {
+    margin-right: 70px; /* Reduce the margin-right to decrease the distance */
+}
+
 .navbar-brand img {
-    height: 40px;
+    height: 25px;
 }
 
 .navbar-nav {
@@ -53,20 +57,46 @@
 .search-container {
     display: flex;
     align-items: center;
+    position: relative; /* Add this */
+    
 }
 
 .search-container input[type="text"] {
-    padding: 10px;
+    padding: 5px 5px 5px 30px; /* Add padding-left for the icon */
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-right: 10px;
+    font-size: 14px; /* Adjust font size for placeholder */
+    /* margin-right: 70px; */
+    margin-left: 300px;
+}
+
+.search-container input[type="text"]::placeholder {
+    font-size: 12px; /* Adjust placeholder font size */
+}
+
+.search-container .search-icon {
+    position: absolute;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    pointer-events: none; /* Allows clicks to pass through to the input */
+    margin-left: 300px;
 }
 
 .search-container button {
     padding: 10px 20px;
     border: none;
-    background-color: #007BFF;
-    color: white;
+    background-color: white;
+    color: black;
     cursor: pointer;
     border-radius: 4px;
+    margin-left: 60px;
+    width: 150px;
+
+}
+.new{
+    background-color: rgb(100, 53, 233);
+    border-radius: 10px;
+    border: #ccc;
 }

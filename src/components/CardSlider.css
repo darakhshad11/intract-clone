@@ -1,151 +1,145 @@
 .card-slider {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-  
-  .card-wrapper {
-    padding: 0 25px; 
-  }
-  
-  .card {
-    border: 2px solid gray; 
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    height: 400px;
-    background-color: black;
-  }
-  
-  .card-header {
-    position: relative;
-    height: 200px; /* Adjust to make sure the image fits well within the increased card height */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
-  
-  .card-image {
-    width: 50%; /* Adjust to make the image cover the width of the card */
-    height: 50%;
-    object-fit: cover;
-  }
-  
-  .card-bookmark {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  .name, .heading {
-    margin: 10px 0;
-  }
-  
-  .card-button {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .card-buttons {
-    margin: 0 5px;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    border: 2px solid gray; 
-    cursor: pointer;
-    border-radius: 25px;
-  }
-  
-  .card-buttons:hover {
-    background-color: #0056b3;
-  }
-  .h3{
-    font-family: Outfit;
-    font-size: 35px;
-  }
-  .eco-card {
-    width: 100px; /* Set the card width */
-    height: 150px; /* Set the card height */
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background-color: white; /* Background color of the card */
-  }
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
 
-.eco-card-image {
-  width: 100px; /* Increase image size */
-  height: 100px; /* Maintain aspect ratio */
+.card-wrapper {
+  padding: 0 15px;
+  width: 200px; 
+}
+
+.card {
+  border: 2px solid gray;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  height: 400px; 
+  background-color: black;
+}
+
+.card-header {
+  position: relative;
+  height: 200px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.card-image {
+  width: 50%; 
   object-fit: cover;
-  margin-bottom: 10px;
-  border-radius: 100%;
 }
 
-.eco-card-name {
-  font-size: 16px; /* Adjust text size */
-  font-weight: bold;
+.card-bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-.slick-slide {
+.name, .heading {
+  margin: 10px 0;
+}
+
+.card-button {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 10px;
 }
 
-.card-slider {
-  width: 90%;
-  margin: 0 auto;
+.card-buttons {
+  margin: 0 5px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: 2px solid gray; 
+  cursor: pointer;
+  border-radius: 25px;
 }
 
-.h3 {
-  
-  margin: 20px ;
+.card-buttons:hover {
+  background-color: #0056b3;
 }
-
+.h3{
+  font-family: Outfit;
+  font-size: 35px;
+  color: white;
+}
 .eco-card {
+  width: 100px; /* Set the card width */
+  height: 150px; /* Set the card height */
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  background-color: white; /* Background color of the card */
 }
 
 .eco-card-image {
-  width: 100px; /* Increase image size */
-  height: 100px; /* Maintain aspect ratio */
-  object-fit: cover;
-  margin-bottom: 10px;
+width: 100px; /* Increase image size */
+height: 100px; /* Maintain aspect ratio */
+object-fit: cover;
+margin-bottom: 10px;
+border-radius: 100%;
 }
 
 .eco-card-name {
-  font-size: 16px; 
-  font-weight: bold;
+font-size: 16px; /* Adjust text size */
+font-weight: bold;
 }
 
 .slick-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card-slider {
+width: 90%;
+margin: 0 auto;
+}
+
+.h3 {
+text-align: center;
+margin: 20px 0;
+}
+
+.eco-card {
+padding: 10px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.eco-card-image {
+width: 100px; /* Increase image size */
+height: 100px; /* Maintain aspect ratio */
+object-fit: cover;
+margin-bottom: 10px;
+}
+
+.eco-card-name {
+font-size: 16px; 
+font-weight: bold;
+}
+
+.slick-slide {
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .card-eco {
-  padding: 10px;
-  margin-left: 0px;
-  margin-right: -55px;
-  box-sizing: border-box;
+padding: 10px;
+box-sizing: border-box;
 }
 
 .card-slider-next-arrow,
 .card-slider-prev-arrow {
-  font-size: 24px;
-  color: #000;
-  cursor: pointer;
-  z-index: 1;
-}
-
-
-.card-nft {
-  padding: 0 15px; 
+font-size: 24px;
+color: #000;
+cursor: pointer;
+z-index: 1;
 }

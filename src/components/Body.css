@@ -2,26 +2,21 @@
     background-image: url('../logo/intract-academy-background-5547a705.png'); 
     background-size: cover; 
     background-position: center;
-    height: 100vh; 
+    height: 550px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden; 
-  
 }
 
-.academy-gif {
-    width: 150px; 
+.academy-gif img {
+    width: 200px; /* Adjust as needed */
+    margin-right: 300px; /* Adjust as needed */
     mix-blend-mode: screen;
     transition: top 0.5s ease;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+    z-index: 1; /* Ensure it is above the background */
 }
-
-
-
 
 .intro-text {
     text-align: center;
@@ -29,4 +24,56 @@
     font-size: 1.2em;
     margin-top: 1em;
     z-index: 1; 
+}
+
+.get {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(100, 53, 233);
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px; /* Adjust as needed */
+    z-index: 1;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    width: 16px; /* Adjust as needed */
+    height: auto;
+    margin-left: 10px; /* Add some space between text and icon */
+}
+
+.get:hover {
+    background-color: white;
+    color: rgb(100, 53, 233); /* Ensure the text color is visible when hovered */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    width: 300px; /* Adjust as needed */
+    max-height: 300px; /* Adjust as needed */
+    overflow: hidden; /* Ensure overflow is hidden */
+    position: relative; /* Ensure position is relative for inner scrolling */
+    z-index: 1;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.card-content {
+    max-height: 200px; /* Set the height for scrollable content */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Adjust padding for scroll bar visibility */
 }
